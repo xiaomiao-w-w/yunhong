@@ -3,16 +3,6 @@
   padding: 0;
 }
 .page1 {
-<<<<<<< HEAD
-    width: 1695px;
-    aspect-ratio: 100/53;
-    background-size: 100%;
-    background-image: url(https://g-g-bond.oss-cn-beijing.aliyuncs.com/img/6b1cfda25385ac2c5623c67c7864f4a7.jpg);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    background-color: red;
-=======
   width: 1695px;
   /* 宽高比 */
   aspect-ratio: 100/53;
@@ -24,7 +14,6 @@
   flex-direction: column;
   justify-content: space-around;
   background-color: red;
->>>>>>> 1a76b14d7c56c9646f29c17d8f77e9cc314ab194
 }
 .box1 {
   width: 60%;
