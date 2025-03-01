@@ -2,14 +2,15 @@
     margin:0 auto;
     padding: 0;
 }
-.page1{
-    width: 1400px;
-    height: 800px;
+.page1 {
+    width: 1695px;
+    aspect-ratio: 100/53;
+    background-size: 100%;
     background-image: url(https://g-g-bond.oss-cn-beijing.aliyuncs.com/img/6b1cfda25385ac2c5623c67c7864f4a7.jpg);
-    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    background-color: red;
 }
 .box1{
     width:1000px;
@@ -50,9 +51,15 @@
     background-color: aqua;
     display: flex;
     flex-direction: column;
+    
 }
 .box2-1 p{
-    
+    font-size: xx-large;
+    margin-top: 20px;
+}
+.box2-2 p{
+    font-size: xx-large;
+    margin-top: 20px;
 }
 .box2-2{
     width: 300px;
@@ -66,11 +73,19 @@
     width: 300px;
     height: 300px;
     background-color: #fff;
-    margin-top: 50px;
+    margin-top: 40px;
+
 }
 .box2-2-1{
     width: 300px;
     height: 300px;
     background-color: #fff;
-    margin-top: 50px;
+    margin-top: 40px;
+}
+.box2-1-1 img{
+
+    max-width: 300px;
+}
+.box2-2-1 img{
+    max-width: 300px;
 }
