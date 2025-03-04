@@ -18,12 +18,12 @@
 .box1-2 p{
     font-size: xx-large;
     color: #f9f7f7;
-
 }
+
 .box2{
     width: 100vw;
     height: 90vh;
-    background-color: rgb(223, 192, 252);
+    background-color:white;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -32,49 +32,70 @@
 .box2-1{
     width: 300px;
     height: 300px;
-    background-color: rgb(134, 130, 228);
+    background-color:#A8BFBF;
     margin-left: 15%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 20px;
+    transition: transform 1s ease ;
 }
+.box2-1:hover{
+    transform: scale(0.9);
+}
+
 .box2-1-1{
     width: 200px;
     height: 200px;
-    background-color: #f9f7f7;
+    background-color: transparent;
 }
 .box2-2{
     width: 300px;
     height: 300px;
-    background-color: rgb(228, 137, 230);
+    background-color: #A8BFBF;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}.box2-2-1{
+    border-radius: 20px;
+    transition: transform 1s ease ;
+}
+.box2-2:hover{
+    transform: scale(0.9);
+}
+.box2-2-1{
     width: 200px;
     height: 200px;
-    background-color: #f9f7f7;
+    background-color:transparent;
 }
 
 .box2-3{
     width: 300px;
     height: 300px;
-    background-color: rgb(147, 223, 116);
+    background-color: #A8BFBF;
     margin-right: 15%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 20px;
+    transition: transform 1s ease ;
 }
+.box2-3:hover{
+    transform: scale(0.9);
+}
+
 .box2-3-1{
     width: 200px;
     height: 200px;
-    background-color: #f9f7f7;
+    background-color: transparent;
 }
 .box2 img{
     max-width: 200px;
+}
+.box2 p{
+    
 }
 
 

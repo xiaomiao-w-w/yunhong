@@ -1,4 +1,3 @@
-//小驼峰命名
 const user = [
   {
     personAccount: "2024006365",
@@ -15,8 +14,6 @@ const user = [
 ];
 //*先获取dom元素
 const button = document.querySelector(".button");
-//用By方法获取的是一个数组,两种获取节点的方法
-// const button = document.getElementsByClassName("button")[0];
 const tip = document.querySelector(".tip");
 button.onclick = function () {
   const personAccount = document.querySelector(".border1").value;
@@ -34,6 +31,7 @@ button.onclick = function () {
   if (message) {
     alert("登录成功");
     tip.innerHTML = `登录成功`;
+    window.open("http://127.0.0.1:3000/学生管理系统/学生端/主页/stu-main-page.html");
   } else {
     alert("密码错误或者用户不存在");
     tip.textContent = "密码错误或者用户不存在";
