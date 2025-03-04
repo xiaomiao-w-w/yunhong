@@ -6,11 +6,16 @@
     width: 100vw;
     height: 10vh;
     background-color: #6F8861;
+    display: flex;
+    align-items: center;
+}
+.box1-2 img{
+    margin-left: 1100px;
 }
 .box2{
     width: 100vw;
     height: 90vh;
-    background-color: rgb(223, 192, 252);
+    background-color: white;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -18,10 +23,11 @@
 .box2-1{
     width: 600px;
     height: 80px;
-    background-color: rgb(198, 234, 221);
+    background-color:#D9D9D9;
     display: flex;
     align-items: center;
     border-radius: 10px;
+
 }
 .border1{
     width: 500px;
@@ -31,10 +37,11 @@
 .box2-2{
     width: 600px;
     height: 80px;
-    background-color: rgb(198, 234, 221);
+    background-color: #D9D9D9;
     display: flex;
     align-items: center;
     border-radius: 10px;
+    margin-top: 50px;
 }
 .border2{
     width: 500px;
@@ -46,12 +53,13 @@
     height: 50px;
     margin-top: 100px;
     font-size: x-large;
-    background-color: aqua;
+    background-color: rgb(243, 247, 247);
     border-radius: 5px;
-    border-color: blueviolet;
-    transition:transform 2s ease;
+    border-color: rgb(9, 1, 17);
+    /* transition:transform 2s ease; */
+    transition-duration: 1s;
 }
 .button:hover{
-    color: #6F8861;
-    background-color: aliceblue;
+    color: #f3f6f1;
+    background-color: rgb(9, 15, 19);
 }
