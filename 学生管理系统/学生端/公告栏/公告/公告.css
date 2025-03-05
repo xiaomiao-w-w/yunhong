@@ -1,0 +1,36 @@
+
+  .zero img{
+   width:100%;
+
+  }
+ .tou img{
+   width:50px;
+   height: 50px;
+   position:absolute;
+   right:10%;
+   top:3%;
+ }
+ .one ul{
+   background: none;
+   position:absolute;
+    list-style-type:none;
+    top:8%;
+   left:8%;
+ }
+.one li{
+   margin:13px;
+}
+.two ul{
+
+   position:absolute;
+    list-style-type:none;
+    top:8%;
+   left:27%;
+ }
+.two li{
+   height:123px;
+   width:720px;
+   /* background-color: blueviolet; */
+
+}
+
