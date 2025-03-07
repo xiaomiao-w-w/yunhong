@@ -27,11 +27,11 @@ nav.addEventListener('mouseout', () => {
 
 var pre = document.querySelector(".left");
 
-pre.addEventListener('click', () => {
-    axios.get('url').then((res) => {
-        console.log(res);
-    }).catch((err) => {
-        console.log(err);
-        alert("无法回到上一页，请稍后再试");
-    });
-})
+// pre.addEventListener('click', () => {
+//     axios.get('url').then((res) => {
+//         console.log(res);
+//     }).catch((err) => {
+//         console.log(err);
+//         alert("无法回到上一页，请稍后再试");
+//     });
+// })
