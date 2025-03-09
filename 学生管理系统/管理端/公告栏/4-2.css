@@ -30,17 +30,26 @@
     width: 35%;
     height: 100%;
     margin: 0 5px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .developments {
     background-color: #EBEDDF;
     width: 35%;
     height: 100%;
     margin: 0 5px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .models {
     background-color: #EBEDDF;
     width: 35%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 span {
     font-size: 20px;
@@ -49,4 +58,19 @@ span {
     position: relative;
     top: 10px;
     left: 95px;
+}
+.news-content {
+    width: 92%;
+    height: 85%;
+    padding: 10px;
+}
+.developments-content {
+    width: 92%;
+    height: 85%;
+    padding: 10px;
+}
+.models-content {
+    width: 92%;
+    height: 85%;
+    padding: 10px;
 }

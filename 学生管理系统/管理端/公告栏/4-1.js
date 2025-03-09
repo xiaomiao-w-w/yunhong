@@ -1,11 +1,11 @@
-<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>;
+
 "Use strict"
 let input = document.querySelectorAll("input");
 let add = document.querySelector(".add");
 let main = document.querySelector(".main");
-let value = input[0].value;
 // 搜索
 input[0].addEventListener("input", function () {
+    let value = input[0].value;
     if (value == "") return;
     else {
         axios.get("http://127.0.0.1:3000/search", {
@@ -13,20 +13,12 @@ input[0].addEventListener("input", function () {
                 value: value
             }
         }).then(function (response) {
-            main.value = response.data;
+            main.innerHTML = response.data;
         }).catch(function (error) {
             console.log(error);
         });
     }
 });
-// 时间
-let time = document.querySelector(".time");
-let day = document.querySelector(".day");
-let year = document.querySelector(".year");
-time.addEventListener("click", function () {
-    day.innerHTML = new Date().getDate();
-    year.innerHTML = new Date().getFullYear();
-})
 // 增加
 let count = 0;
 function Cycle(className, content) {
@@ -34,19 +26,47 @@ function Cycle(className, content) {
 }
 add.addEventListener("click", function () {
     count++;
-        Cycle(
+    Cycle(
           ".main",
-          `<div class="time">
+          `<div class="part">
+          <div class="time">
             <span class="day"></span>
             <span class="year"></span>
             </div>
-            <input type="text">
-            <button class="delete"></button>`
-        );
-    }
-);
+            <input type="text" class="news">
+            <button class="delete"></button>
+            </div>
+            `
+    );
+});
+// 初始化时间
+let time = document.querySelectorAll(".time");
+let day = document.querySelectorAll(".day");
+let year = document.querySelectorAll(".year");
+let news = document.querySelectorAll(".news");
+axios.get("http://127.0.0.1:3000/time", {})
+  .then(function (response) {
+    document.querySelectorAll(".part").forEach((item, index) => {
+      item.querySelector(".day").textContent = response.data.day;
+      item.querySelector(".year").textContent = response.data.year;
+    });
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
+// 设置新增部分的时间
+  axios.get("http://127.0.0.1:3000/time", {})
+    .then(function (response) {
+      let lastPart = document.querySelector(".main .part:last-child");
+      lastPart.querySelector(".day").textContent = response.data.day;
+      lastPart.querySelector(".year").textContent = response.data.year;
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
 // 删除
-let delete_ = document.querySelectorAll("delete");
-delete_[count].addEventListener("click", function () {
-    main[count].parentNode.remove();
+main.addEventListener("click", function (event) {
+  if (event.target.classList.contains("delete")) {
+    event.target.closest(".part").remove();
+  }
 });
