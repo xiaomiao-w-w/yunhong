@@ -33,7 +33,10 @@ function addStudentToTable() {
 
 // “添加学生”按钮点击事件
 addStudentBtn.addEventListener('click', addStudentToTable);
-
+deleteBtn.addEventListener('click', function () {
+    const currentRow = this.parentNode.parentNode;
+    currentRow.remove(); // 移除当前行元素
+});
 // “图标查看”按钮点击事件
 viewChartBtn.addEventListener('click', function () {
     // 显示右边区域
