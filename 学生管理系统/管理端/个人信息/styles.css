@@ -1,0 +1,46 @@
+/* 整体容器样式 */
+.container {
+  display: flex;
+}
+
+/* 左边区域样式 */
+.left-section {
+  width: 50%;
+  padding: 10px;
+}
+
+/* 右边区域样式 */
+.right-section {
+  width: 50%;
+  padding: 10px;
+  display: none; /* 初始隐藏右边区域 */
+}
+
+/* 头部样式 */
+.header {
+  background-color: #009966;
+  color: white;
+  padding: 10px;
+}
+
+/* 搜索框样式 */
+.search-box {
+  margin: 10px 0;
+}
+
+/* 表格样式 */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ccc;
+}
+
+/* 按钮区域样式 */
+.button-section {
+  margin-top: 10px;
+}
