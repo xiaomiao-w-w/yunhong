@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>学生信息与图表界面</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- 引入Chart.js库 -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <!-- 左边区域 -->
+    <div class="left-section">
+      
+      <div class="search-box">
+        <input type="text" placeholder="搜索">
+      </div>
+      <table id="studentTable">
+        <thead>
+          <tr>
+            <th>姓名</th>
+            <th>学号</th>
+            <th>方向</th>
+            <th>专业</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+      <div class="button-section">
+        <button id="addStudentBtn">添加学生</button>
+        <button id="viewChartBtn">图标查看</button>
+      </div>
+    </div>
+    <!-- 右边区域 -->
+    <div class="right-section">
+      <div class="chart-container">
+        <canvas id="myChart" width="400" height="400"></canvas>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
