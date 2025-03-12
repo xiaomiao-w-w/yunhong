@@ -18,7 +18,7 @@ button.onclick = function () {
     }
 
     // 发送 POST 请求到服务器进行验证
-    axios.post("http://127.0.0.1:8000/auth/login", {
+    axios.post("https://mihong.natappvip.cc/auth/token", {
         username: personAccount,
         password: password
     })
@@ -28,7 +28,7 @@ button.onclick = function () {
         tip.textContent = "登录成功";
 
         // 如果需要跳转到新页面
-        window.open("http://127.0.0.1:3000/学生管理系统/管理端/主页/man-main-page.html");
+        window.open("http://127.0.0.1:3000/管理端/主页/man-main-page.html");
     })
     .catch(err => {
         console.error("登录失败:", err);

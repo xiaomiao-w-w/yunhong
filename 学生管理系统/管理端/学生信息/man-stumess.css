@@ -1,0 +1,153 @@
+/* 整体容器样式 */
+.container {
+  display: flex;
+}
+
+/* 左边区域样式 */
+.left-section {
+  width: 70%; /* 调整为 70% */
+  padding: 10px;
+}
+
+/* 右边区域样式 */
+.right-section {
+  width: 30%; /* 调整为 30% */
+  padding: 10px;
+  display: none; /* 初始隐藏右边区域 */
+}
+
+/* 表格样式 */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+  font-size: 16px; /* 调整字体大小 */
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 12px; /* 增加内边距，使表格内容更易读 */
+  text-align: center; /* 文本居中 */
+}
+
+th {
+  background-color: #f2f2f2; /* 表头背景颜色 */
+  font-weight: bold; /* 表头字体加粗 */
+}
+
+/* 搜索框样式 */
+.search {
+  width: 100%;
+  height: 40px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+.search input {
+  width: 90%;
+  height: 30px;
+  background-image: url("https://wky18434353947.oss-cn-beijing.aliyuncs.com/img/Frame%206.svg");
+  background-color: #ede8e8;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-position: 5px;
+  border-radius: 20px;
+  border: none;
+  outline: 0;
+  position: absolute;
+  padding:0 16px 0 30px;
+  transition: all 0.3s;
+font-size:14px;
+}
+.search input::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  position: relative;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: url("https://wky18434353947.oss-cn-beijing.aliyuncs.com/img/%E5%85%B3%E9%97%AD_close-one.svg") no-repeat center;
+  background-size: 100% 100%;
+  color:rgba(0,0,0,0);
+}
+.search input[type=search]::-ms-clear {
+  appearance: none;
+  position: relative;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: url("https://wky18434353947.oss-cn-beijing.aliyuncs.com/img/%E5%85%B3%E9%97%AD_close-one.svg") no-repeat center;
+  background-size: 100% 100%;
+  color:rgba(0,0,0,0);
+}
+
+/* 按钮样式 */
+.button-section {
+  margin-top: 20px;
+}
+
+.button-section button {
+  padding: 10px 20px;
+  font-size: 16px; /* 调整按钮字体大小 */
+  background-color: #009966; /* 按钮背景颜色 */
+  color: white;
+  border: none;
+  border-radius: 5px; /* 添加圆角 */
+  cursor: pointer;
+}
+
+.button-section button:hover {
+  background-color: #00734d; /* 鼠标悬停时的背景颜色 */
+}
+
+/* 其他样式 */
+* {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.box1 {
+  width: 100vw;
+  height: 10vh;
+  background-color: #6F8861;
+  display: flex;
+  align-items: center;
+}
+
+.box1-1 {
+  margin-left: 3%;
+}
+
+.box1-2 {
+  margin-left: 950px;
+}
+
+.box1-3 {
+  margin-right: 3%;
+}
+
+.box1-3 p {
+  font-size: xx-large;
+  color: #f9f7f7;
+}
+
+.box2 {
+  width: 100vw;
+  height: 90vh;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.box2-1 {
+  width: 95vw;
+  height: 85vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}

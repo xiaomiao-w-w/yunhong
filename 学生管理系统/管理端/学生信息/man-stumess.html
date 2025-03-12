@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>管理端 学生信息</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="man-stumess.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="stu-notice">
+        <div class="box1">
+            <div class="box1-1">
+                <img src="https://g-g-bond.oss-cn-beijing.aliyuncs.com/img/%E4%BA%91%E9%A1%B6%E7%99%BD%E8%89%B2%201.png" />
+                <img src="https://g-g-bond.oss-cn-beijing.aliyuncs.com/img/%E4%BA%91%E9%A1%B6%E4%B9%A6%E9%99%A2%E5%AD%97%E7%99%BD%E8%89%B2%201.png" />
+            </div>
+            <a href="http://127.0.0.1:3000/管理端/主页/man-main-page.html">
+                <div class="box1-2">
+                    <img src="https://g-g-bond.oss-cn-beijing.aliyuncs.com/img/Frame%20(6).png" />
+                </div>
+            </a>
+            <div class="box1-3">
+                <p>管理端</p>
+            </div>
+        </div>
+        <div class="box2">
+            <div class="box2-1">
+                <div class="container">
+                    <div class="left-section">
+                        <div class="search">
+                            <input type="text" placeholder="搜索">
+                        </div>
+                        <table id="studentTable">
+                            <thead>
+                                <tr>
+                                    <th>姓名</th>
+                                    <th>学号</th>
+                                    <th>方向</th>
+                                    <th>专业</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                        <div class="button-section">
+                            <button id="addStudentBtn">添加学生</button>
+                            <button id="viewChartBtn">图标查看</button>
+                        </div>
+                    </div>
+                    <div class="right-section">
+                        <div class="chart-container">
+                            <canvas id="myChart" width="400" height="400"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="man-stumess.js"></script>
+</body>
+</html>
