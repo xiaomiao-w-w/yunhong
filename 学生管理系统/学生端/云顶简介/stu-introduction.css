@@ -1,51 +1,104 @@
-*{
-  margin:0 auto;
+* {
+  margin: 0 auto;
   padding: 0;
 }
-.box1{
+.body {
+  margin: 0 auto;
+  width: 100%;
+}
+/* 顶栏 */
+/* .header {
+  background-color: #6F8861;
+  width: 100vw;
+  height: 10vh;
+  position: relative;
+} */
+/* .header img {
+  width: 50px;
+  height: 30px;
+}
+.header a img {
+  width: 50px;
+  height: 30px;
+  position: absolute;
+  right: 0;
+} */
+/* 内容 */
+.main {
+  width: 100vw;
+  height: 90ch;
+  height: calc(100vh - 60px);
+  display: flex;
+}
+.news {
+  background-color: #EBEDDF;
+  width: 35%;
+  height: 100%;
+  margin: 0 5px 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.developments {
+  background-color: #EBEDDF;
+  width: 35%;
+  height: 100%;
+  margin: 0 5px 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.models {
+  background-color: #EBEDDF;
+  width: 35%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+span {
+  font-size: 25px;
+  font-weight: bold;
+  color: #6F8861;
+  position: relative;
+  top: 10px;
+  left: 95px;
+}
+.news-content {
+  width: 92%;
+  height: 85%;
+  padding: 10px;
+}
+.developments-content {
+  width: 92%;
+  height: 85%;
+  padding: 10px;
+}
+.models-content {
+  width: 92%;
+  height: 85%;
+  padding: 10px;
+}
+.box1 {
   width: 100vw;
   height: 10vh;
   background-color: #6F8861;
   display: flex;
   align-items: center;
 }
-.box1-1{
+.box1-1 {
   margin-left: 3%;
 }
-.box1-2{
+
+.box1-2 {
   margin-left: 950px;
 }
-.box1-3{
-  margin-right:3%; 
-}
-.box1-3 p{
-  font-size: xx-large;
-  color: #f9f7f7;
+
+.box1-3 {
+  margin-right: 3%;
 }
 
-.box2{
-  width: 100vw;
-  height: 90vh;
-  background-color:white;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-.box2-1{
-  width: 95vw;
-  height: 85vh;
-  background-color: #ECEFE8;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.box2-1-1{
-  margin-left: 8%;
-  margin-top: -300px;
-}
-.box2-1-2{
-  width: 65vw;
-  height: 80vh;
-  background-color: aqua;
+.box1-3 p {
+  font-size: xx-large;
+  color: #f9f7f7;
 }
