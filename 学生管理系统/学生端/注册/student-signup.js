@@ -34,6 +34,6 @@ button.onclick = function () {
 
     if (isValid) {
         alert("注册成功");
-        window.open("http://127.0.0.1:3000/学生端/主页/stu-main-page.html");
+        window.open("./学生端/主页/stu-main-page.html");
     }
 };
